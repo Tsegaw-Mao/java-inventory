@@ -15,12 +15,14 @@ import java.util.List;
 public class SectionRepository {
 
     public static List<Section> Sections = new ArrayList<>();
+    
 
     public SectionRepository(List<Section> sectionss) {
         this.Sections = sectionss;
     }
 
     public SectionRepository() {
+        Sections = new ArrayList<>();
         
     }
 

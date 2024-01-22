@@ -4,45 +4,60 @@
  */
 package com.mycompany.java1.models;
 
+import java.util.List;
+
 /**
  *
  * @author omen
  */
 public class StorageBin {
+
     int binID;
     int sectionID;
-    int itemID;
-    int quantity;
+    List<Item> items;
     int maxCapacity;
-    
-    public int getBinID(){
-        return binID;
-    }
-    public void setBinID(int binID){
+
+    public StorageBin(int binID, int sectionID, List<Item> items, int maxCapacity) {
         this.binID = binID;
-    }
-    public int getSectionID(){
-        return sectionID;
-    }
-    public void setSectionID(int sectionID){
         this.sectionID = sectionID;
-    }   
-    public int getItemID(){
-        return itemID;
-    }
-    public void setItemID(int itemID){
-        this.itemID = itemID;
-    }
-    public int getQuantity(){
-        return quantity;
-    }
-    public void setQuantity(int quantity){
-        this.quantity = quantity;
-    }
-    public int getMaxCapacity(){
-        return maxCapacity;
-    }
-    public void setMaxCapacity(int maxCapacity){
+        this.items = items;
         this.maxCapacity = maxCapacity;
     }
+
+    public StorageBin() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+    
+    public int getBinID() {
+        return binID;
+    }
+
+    public void setBinID(int binID) {
+        this.binID = binID;
+    }
+
+    public int getSectionID() {
+        return sectionID;
+    }
+
+    public void setSectionID(int sectionID) {
+        this.sectionID = sectionID;
+    }
+
+    public List<Item> getItems() {
+        return items;
+    }
+
+    public void setItems(List<Item> items) {
+        this.items = items;
+    }
+
+    public int getMaxCapacity() {
+        return maxCapacity;
+    }
+
+    public void setMaxCapacity(int maxCapacity) {
+        this.maxCapacity = maxCapacity;
+    }
+
 }

@@ -13,24 +13,67 @@ public class Item {
     int itemID;
     String name;
     String description;
-    
-    public int getItemID(){
+    int quantity;
+    int sectionID;
+    double price;
+
+    public Item(int itemID, String name, String description, int quantity, int sectionID, double price) {
+        this.itemID = itemID;
+        this.name = name;
+        this.description = description;
+        this.quantity = quantity;
+        this.sectionID = sectionID;
+        this.price = price;
+    }
+
+    public int getItemID() {
         return itemID;
     }
-    public void setItemID(int itemID){
+
+    public void setItemID(int itemID) {
         this.itemID = itemID;
     }
-    public String getName(){
+
+    public String getName() {
         return name;
     }
-    public void setName(String name){
+
+    public void setName(String name) {
         this.name = name;
     }
-    public String getDescription(){
+
+    public String getDescription() {
         return description;
     }
-    public void setDescription(String description){
+
+    public void setDescription(String description) {
         this.description = description;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+    
+    
+
+    public int getSectionID() {
+        return sectionID;
+    }
+
+    public void setSectionID(int sectionID) {
+        this.sectionID = sectionID;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
 
 }
